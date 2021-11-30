@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <input type="checkbox" id="openSideBarMenu" hidden>
+        <label for="openSideBarMenu" class="sidebarIconToggle">
+            <div class="ham-burger"></div>
+            <div class="ham-burger"></div>
+            <div class="ham-burger"></div>
+        </label>
+        <div id = "sidebarMenu">
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./employee.html">Employee</a></li>
+                <li><a href="./department.html">Department</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="emp-form">
+            <form action="./employee.html">
+                <label for="emp-id">Employee ID:</label><br>
+                <input type="text" id="emp-id" required><br>
+    
+                <label for="emp-name">Employee Name:</label><br>
+                <input type="text" id="emp-name" required><br>
+    
+                <label for="emp-age">Employee Age:</label><br>
+                <input type="text" id="emp-age" required><br>
+    
+                <button onclick="addData()" id="submit-btn">SUBMIT</button>
+                <button id="back-btn" onclick="window.location.href = './employee.html'">BACK</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <input type="checkbox" id="openSideBarMenu" hidden>
+        <label for="openSideBarMenu" class="sidebarIconToggle">
+            <div class="ham-burger"></div>
+            <div class="ham-burger"></div>
+            <div class="ham-burger"></div>
+        </label>
+        <div id = "sidebarMenu">
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./employee.html">Employee</a></li>
+                <li><a href="./department.html">Department</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="dept-form">
+            <form action="./department.html">
+                <label for="dept-id">Department ID:</label><br>
+                <input type="text" id="dept-id" required><br>
+    
+                <label for="dept-name">Department Name:</label><br>
+                <input type="text" id="dept-name" required><br>
+    
+                <button onclick="addData()" id="submit-btn">SUBMIT</button>
+                <button id="back-btn" onclick="window.location.href = './department.html'">BACK</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/dept_form.js"></script>
+</body>
+</html>

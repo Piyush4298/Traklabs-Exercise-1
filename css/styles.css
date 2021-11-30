@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #ff4d4d;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+}
+
+.sidebarIconToggle{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    z-index: 20;
+    top:22px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.ham-burger{
+    background-color: #fff;
+    max-width: 100%;
+    height: 4px;
+    margin-top: 3px;
+}
+
+#sidebarMenu{
+    height: 100%;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 250px;
+    margin-top: 60px;
+    background-color: #17c0eb;
+    transform: translateX(-250px);
+    transition: 250ms;
+}
+
+#openSideBarMenu:checked ~ #sidebarMenu{
+    transform: translateX(0px);
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    border-bottom: 1px solid #bbb;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+#title-heading{
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.main{
+    height: 700px;
+    margin-top: 60px;
+    padding: 10px 50px;
+
+}
+
+#search-space{
+    float: left;
+    width: 500px;
+    height: 40px
+}
+
+#search-space #search-bar{
+    width: 300px;
+    padding: 5px;
+}
+
+#search-space #search-btn,#clear-btn{
+    cursor: pointer;
+    background-color: #576574;
+    color: #fff;
+    margin-left: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+#add-btn{
+    float: right;
+    width: 100px;
+    height: 40px;
+}
+
+#add-btn button{
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80px;
+    background-color: #1dd1a1;
+    color: #fff;
+}
+
+.edit-yellow{
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 3px;
+    border-radius: 5px;
+    background-color: #feca57;
+}
+
+.delete-red{
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ee5253;
+    color: #fff;
+}
+
+
+#emp-table{
+    margin-top: 80px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#emp-table th{
+    cursor: pointer;
+    background-color: #2C3A47;
+    color: #fff;
+}
+
+#emp-table th,td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+#emp-table tr:nth-child(even){
+    background-color: #828880;
+}
+
+
+.emp-form{
+    background: #82ccdd;
+    margin-left: 450px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.emp-form input{
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.emp-form button{
+    margin: 20px;
+    padding: 5px;
+    width: 100px;
+}
+
+.emp-form #submit-btn{
+    background-color: #78e08f;
+}
+
+.emp-form #back-btn{
+    background-color: #fa983a;
+}
+
+#pagination-wrapper{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#pagination-wrapper .btn{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 70px;
+    margin-top: 10px;
+    margin-right: 3px;
+    padding: 5px;
+    color: #000;
+    background-color: #18dcff;
+}
+/*********************************************************************************/
+#dept-table{
+    margin-top: 80px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#dept-table th{
+    cursor: pointer;
+    background-color: #2C3A47;
+    color: #fff;
+}
+
+#dept-table th,td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+#dept-table tr:nth-child(even){
+    background-color: #828880;
+}
+
+
+.dept-form{
+    background: #82ccdd;
+    margin-left: 450px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.dept-form input{
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.dept-form button{
+    margin: 20px;
+    padding: 5px;
+    width: 100px;
+}
+
+.dept-form #submit-btn{
+    background-color: #78e08f;
+}
+
+.dept-form #back-btn{
+    background-color: #fa983a;
+}

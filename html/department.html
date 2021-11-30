@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Data</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <input type="checkbox" id="openSideBarMenu" hidden>
+        <label for="openSideBarMenu" class="sidebarIconToggle">
+            <div class="ham-burger"></div>
+            <div class="ham-burger"></div>
+            <div class="ham-burger"></div>
+        </label>
+        <div id = "sidebarMenu">
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./employee.html">Employee</a></li>
+                <li><a href="./department.html">Department</a></li>
+            </ul>
+        </div>
+        <div id = "title-heading">
+            <h1>Department Directory</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div id="search-space">
+            <input type="text" id="search-bar" placeholder="Search name or id..">
+            <button id="search-btn" onclick="searchByIdOrName()">search</button>
+            <button id="clear-btn" onclick="clearSearchBar()">clear</button>
+        </div>
+
+        <div id="add-btn">
+            <button onclick="window.location.href = './dept_form.html';" id="add-green">Add</button>
+        </div>
+
+        <table id = "dept-table">
+            <thead>
+                <tr>
+                    <th onclick="sortByColumnName('id');">Department Id</th>
+                    <th onclick="sortByColumnName('name');">Department Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+        <div id="pagination-wrapper">
+
+        </div>
+    </div>
+
+    <script src="../js/department.js"></script>
+</body>
+</html>
