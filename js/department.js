@@ -70,10 +70,10 @@ function pageButtons(pages) {
     }
 
     
-    document.querySelector('.page').addEventListener('click', function() {
-        document.querySelector('#tbody').empty()
+    $('.page').on('click', function() {
+        $('#tbody').empty()
 
-        state.page = Number(document.querySelector(this).value)
+        state.page = Number($(this).val())
         localStorage.setItem("deptPageNo", JSON.stringify(state.page));
         buildTable(state)
     })

@@ -66,14 +66,14 @@ function pageButtons(pages) {
     if (state.page != pages) {
         wrapper.innerHTML += `<button value=${pages} class="page btn">Last &#187;</button>`
     }
-
     
-    document.querySelector('.page').addEventListener('click', function() {
-        document.querySelector('#table-body').empty()
-        
-        state.page = Number(document.querySelector(this).value)
+    $('.page').on('click', function() {
+        $('#tbody').empty()
+
+        state.page = Number($(this).val())
         localStorage.setItem("empPageNo", JSON.stringify(state.page));
-        buildTable()
+
+        buildTable(state)
     })
 
 }
